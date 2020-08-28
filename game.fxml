@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" vgap="2.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+        <Pane fx:id="insertDiscPane" prefHeight="270.0" prefWidth="210.0" GridPane.rowIndex="1">
+            <padding>
+                <Insets bottom="100.0" />
+            </padding></Pane>
+        <VBox prefHeight="270.0" prefWidth="275.0" spacing="30.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Region prefHeight="101.0" prefWidth="242.0" VBox.vgrow="ALWAYS" />
+                <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="35.0" prefWidth="365.0" text="Player One" textFill="#fffdfd">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="35.0" prefWidth="435.0" text="Turn" textFill="#fffefe">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font></Label>
+                <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            </children>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </VBox>
+    </children>
+</GridPane>
